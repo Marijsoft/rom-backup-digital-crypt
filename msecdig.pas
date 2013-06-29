@@ -44,7 +44,6 @@ type
     procedure Button1Click(Sender: TObject);
     procedure CornerButton1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
-    procedure FormActivate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -59,7 +58,7 @@ implementation
 
 {$R *.fmx}
 
-uses LbCipher, LbProc, Cromis.XTEA;
+uses LbCipher,{$ifdef mswindows}Cromis.XTEA,{$endif} LbProc;
 
 type
   TEncryption = (e3DesCbc);
@@ -94,8 +93,10 @@ begin
       RNG32EncryptFile(OpenDialog1.FileName, SaveDialog1.FileName,
         StrToInt(Edit1.Text)); // <-da inserire solo password numerica
     2:
+ {$ifdef mswindows}
       XTeaEncryptFile(OpenDialog1.FileName, SaveDialog1.FileName,
         GetBytesFromUnicodeString(Edit1.Text));
+  {$ENDIF}
   end;
 end;
 
@@ -112,17 +113,11 @@ begin
       RNG32EncryptFile(OpenDialog1.FileName, SaveDialog1.FileName,
         StrToInt(Edit1.Text + pwd)); // <-da inserire solo password numerica
     2:
+    {$IFDEF MSWINDOWS}
       XTeaDecryptFile(OpenDialog1.FileName, SaveDialog1.FileName,
-        GetBytesFromUnicodeString(Edit1.Text + pwd));
+        GetBytesFromUnicodeString(Edit1.Text + pwd)); {$ENDIF}
   end;
   CrumpleTransitionEffect1.AnimateFloat('Progress', 100, 0.5);
-end;
-
-procedure TForm2.FormActivate(Sender: TObject);
-begin
-{$IFDEF macos}
-  MainMenu1.Hide;
-{$ENDIF}
 end;
 
 procedure TForm2.SpeedButton1Click(Sender: TObject);

@@ -6,7 +6,7 @@
         <MainSource>rdc.dpr</MainSource>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Release</Config>
-        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+        <Platform Condition="'$(Platform)'==''">OSX32</Platform>
         <TargetedPlatforms>5</TargetedPlatforms>
         <AppType>Application</AppType>
     </PropertyGroup>
@@ -76,6 +76,11 @@
         <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win64)'!=''">
+        <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;$(DCC_Namespace)</DCC_Namespace>
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
         <DCC_UsePackage>IndyIPClient;AnyDAC_PhysADS_D18;NxGridRun_dxe4;AnyDAC_PhysODBC_D18;AnyDAC_GUIxForms_D18;DBXSqliteDriver;AnyDAC_ComI_D18;AnyDAC_PhysTDBX_D18;fmx;IndySystem;TeeDB;NxSheetRun_dxe4;AnyDAC_PhysIB_D18;vclib;DBXInterBaseDriver;DataSnapClient;DataSnapCommon;DataSnapServer;DataSnapProviderClient;DBXSybaseASEDriver;DbxCommonDriver;vclimg;dbxcds;DatasnapConnectorsFreePascal;MetropolisUILiveTile;vcldb;vcldsnap;AnyDAC_PhysMSAcc_D18;DBXDb2Driver;DBXOracleDriver;CustomIPTransport;vclribbon;dsnap;IndyIPServer;AnyDAC_PhysPg_D18;fmxase;vcl;IndyCore;IndyIPCommon;CloudService;DBXMSSQLDriver;FmxTeeUI;AnyDAC_PhysMSSQL_D18;AnyDAC_PhysOracle_D18;inetdbxpress;webdsnap;AnyDAC_PhysMySQL_D18;IcsVclDXE3Run;adortl;AnyDAC_Phys_D18;NxCommonDsgn_dxe4;NxGridDsgn_dxe4;NxInspectorDsgn_dxe4;AnyDAC_Comp_D18;bindcompfmx;rtl;dbrtl;DbxClientDriver;bindcomp;inetdb;Tee;IcsCommonDXE3Run;DBXOdbcDriver;xmlrtl;ibxpress;IndyProtocols;DBXMySQLDriver;vclactnband;bindengine;soaprtl;bindcompdbx;FMXTee;TeeUI;bindcompvcl;NxDBGridDsgn_dxe4;NxCollectionRun_dxe4;vclie;IcsFmxDXE3Run;vcltouch;AnyDAC_PhysASA_D18;NxInspectorRun_dxe4;NxCommonRun_dxe4;VclSmp;DBXInformixDriver;Intraweb;DataSnapConnectors;NxCollectionDsgn_dxe4;dsnapcon;DBXFirebirdDriver;AnyDAC_PhysSQLITE_D18;inet;fmxobj;vclx;NxDBGridRun_dxe4;DBXSybaseASADriver;fmxdae;dbexpress;DataSnapIndy10ServerTransport;AnyDAC_PhysDb2_D18;$(DCC_UsePackage)</DCC_UsePackage>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1)'!=''">
