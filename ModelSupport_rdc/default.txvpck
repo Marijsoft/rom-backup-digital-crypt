@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="eaxmveg0e6hge6joe_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="design:view:::zy0smbawxih2to71i_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,100,134" />
+      <reference referencedUin="delphi:e_class:src:rdc:rdc.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::nmsuqgnxlhhxzl19p_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="129,1,101,183" />
+      <reference referencedUin="delphi:e_class:src:rdc:msecdig.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:rdc:msecdig.TForm2" />
+      <reference referencedUin="delphi:e_class:src:rdc:msecdig.TEncryption" />
+    </reference>
+  </view>
+</nodeSet>

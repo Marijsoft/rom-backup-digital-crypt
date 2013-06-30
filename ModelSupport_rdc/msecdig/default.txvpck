@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="nmsuqgnxlhhxzl19p_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:rdc:msecdig.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:l_ast:src:rdc:msecdig.@unitclass.Form2" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.@unitclass.Form2" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.@unitclass.Key128" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.@unitclass.pwd" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:rdc:msecdig.TForm2">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TForm2.Image4" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TForm2.SpeedButton1" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TForm2.Image1" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TForm2.Panel1" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TForm2.Label1" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TForm2.OpenDialog1" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TForm2.SaveDialog1" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TForm2.Edit1" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TForm2.Label2" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TForm2.CrumpleTransitionEffect1" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TForm2.Label3" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TForm2.Label7" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TForm2.ComboBox1" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TForm2.StyleBook1" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TForm2.ListBoxItem1" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TForm2.ListBoxItem2" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TForm2.Label8" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TForm2.SpeedButton2" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TForm2.Image6" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TForm2.Label9" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TForm2.SpeedButton3" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TForm2.Image7" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TForm2.Label10" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TForm2.SpeedButton4" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TForm2.Image2" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TForm2.Label4" />
+      <reference referencedUin="delphi:e_method:src:rdc:msecdig.TForm2.SpeedButton1Click(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:rdc:msecdig.TForm2.Button1Click(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:rdc:msecdig.TForm2.CornerButton1Click(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:rdc:msecdig.TForm2.Button2Click(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:rdc:msecdig.TForm2.aggiornachiavi()" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:rdc:msecdig.TEncryption">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:rdc:msecdig.TEncryption.e3DesCbc" />
+    </reference>
+  </view>
+</nodeSet>

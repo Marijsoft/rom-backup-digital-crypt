@@ -1,0 +1,5 @@
+rdc.app\Contents\Info.plist
+rdc.app\Contents\MacOS\libcgunwind.1.0.dylib
+rdc.app\Contents\Resources\rdc.icns
+rdc.app\Contents\Entitlements.plist
+rdc.app\Contents\MacOS\rdc

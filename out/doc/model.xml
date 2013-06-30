@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Model name="rdc" id="rdc" language="delphi">
+  <Diagram name="default" id="ID=5" metaclass="Namespace Diagram" file="default.txvpck.html">
+    <Property name="defaultDiagram">true</Property>
+    <DiagramReference id="ID=384" element="ID=3" metaclass="Namespace">
+      <Property name="Gradient color 2">255, 255, 255</Property>
+      <Property name="Gradient ON">False</Property>
+      <Property name="Gradient color 1">255, 255, 255</Property>
+      <Property name="Color Area">Whole Shape</Property>
+      <Property name="Gradient Mode">Vertical</Property>
+      <Property name="bounds">10,10,110,144</Property>
+      <DiagramReference id="ID=386" element="ID=6" metaclass="Module" />
+    </DiagramReference>
+    <DiagramReference id="ID=385" element="ID=4" metaclass="Namespace">
+      <Property name="Gradient color 2">255, 255, 255</Property>
+      <Property name="Gradient ON">False</Property>
+      <Property name="Gradient color 1">255, 255, 255</Property>
+      <Property name="Color Area">Whole Shape</Property>
+      <Property name="Gradient Mode">Vertical</Property>
+      <Property name="bounds">129,1,230,184</Property>
+      <DiagramReference id="ID=387" element="ID=7" metaclass="Module" />
+      <DiagramReference id="ID=388" element="ID=8" metaclass="Class">
+        <Property name="Sealed">False</Property>
+        <Property name="Extends">FMX.Forms.TForm</Property>
+        <Property name="Persistent">False</Property>
+        <Property name="Abstract">False</Property>
+      </DiagramReference>
+      <DiagramReference id="ID=389" element="ID=9" metaclass="Enum" />
+    </DiagramReference>
+  </Diagram>
+  <Package name="rdc" id="ID=3">
+    <Diagram name="rdc" id="ID=11" metaclass="Namespace Diagram" file="default.txvpck.html">
+      <Property name="defaultDiagram">true</Property>
+      <DiagramReference id="ID=390" element="ID=6" metaclass="Module">
+        <Property name="Gradient color 1">255, 255, 255</Property>
+        <Property name="Color Area">Whole Shape</Property>
+        <Property name="Gradient Mode">Vertical</Property>
+        <Property name="Gradient ON">False</Property>
+        <Property name="Gradient color 2">255, 255, 255</Property>
+      </DiagramReference>
+    </Diagram>
+    <Classifier name="globals rdc" id="ID=6" type="Module" visibility="public">
+      <Uses />
+    </Classifier>
+  </Package>
+  <Package name="msecdig" id="ID=4">
+    <Diagram name="msecdig" id="ID=10" metaclass="Namespace Diagram" file="default.txvpck.html">
+      <Property name="defaultDiagram">true</Property>
+      <DiagramReference id="ID=391" element="ID=7" metaclass="Module">
+        <Property name="Gradient color 1">255, 255, 255</Property>
+        <Property name="Color Area">Whole Shape</Property>
+        <Property name="Gradient Mode">Vertical</Property>
+        <Property name="Gradient ON">False</Property>
+        <Property name="Gradient color 2">255, 255, 255</Property>
+        <DiagramReference id="ID=397" element="ID=99" metaclass="Association Link">
+          <Property name="Client">Form2</Property>
+          <Property name="Supplier">TForm2</Property>
+          <Property name="Type">association</Property>
+          <Property name="Directed">False</Property>
+        </DiagramReference>
+      </DiagramReference>
+      <DiagramReference id="ID=392" element="ID=8" metaclass="Class">
+        <Property name="Gradient ON">False</Property>
+        <Property name="Sealed">False</Property>
+        <Property name="Extends">FMX.Forms.TForm</Property>
+        <Property name="Gradient color 1">255, 255, 255</Property>
+        <Property name="Color Area">Whole Shape</Property>
+        <Property name="Persistent">False</Property>
+        <Property name="Abstract">False</Property>
+        <Property name="Gradient Mode">Vertical</Property>
+        <Property name="Gradient color 2">255, 255, 255</Property>
+      </DiagramReference>
+      <DiagramReference id="ID=393" element="ID=9" metaclass="Enum">
+        <Property name="Gradient ON">False</Property>
+        <Property name="Gradient color 1">255, 255, 255</Property>
+        <Property name="Color Area">Whole Shape</Property>
+        <Property name="Gradient Mode">Vertical</Property>
+        <Property name="Gradient color 2">255, 255, 255</Property>
+      </DiagramReference>
+    </Diagram>
+    <Classifier name="TForm2" id="ID=8" type="Class" visibility="public">
+      <Property name="Sealed">False</Property>
+      <Property name="Extends">FMX.Forms.TForm</Property>
+      <Property name="Persistent">False</Property>
+      <Property name="Abstract">False</Property>
+      <Extends idref="ID=46" refFN="FMX.Forms.TForm" doom="true" />
+      <Uses>
+        <Use element="ID=94" type="field_type" />
+      </Uses>
+      <Field fieldType="Field" elementName="Image4" id="ID=12" type="TImage" systemType="TImage" isPrimitive="false" visibility="public">
+        <Property name="Class">False</Property>
+        <Property name="Type">TImage</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="SpeedButton1" id="ID=13" type="TSpeedButton" systemType="TSpeedButton" isPrimitive="false" visibility="public">
+        <Property name="Class">False</Property>
+        <Property name="Type">TSpeedButton</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="Image1" id="ID=14" type="TImage" systemType="TImage" isPrimitive="false" visibility="public">
+        <Property name="Class">False</Property>
+        <Property name="Type">TImage</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="Panel1" id="ID=15" type="TPanel" systemType="TPanel" isPrimitive="false" visibility="public">
+        <Property name="Class">False</Property>
+        <Property name="Type">TPanel</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="Label1" id="ID=16" type="TLabel" systemType="TLabel" isPrimitive="false" visibility="public">
+        <Property name="Class">False</Property>
+        <Property name="Type">TLabel</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="OpenDialog1" id="ID=17" type="TOpenDialog" systemType="TOpenDialog" isPrimitive="false" visibility="public">
+        <Property name="Class">False</Property>
+        <Property name="Type">TOpenDialog</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="SaveDialog1" id="ID=18" type="TSaveDialog" systemType="TSaveDialog" isPrimitive="false" visibility="public">
+        <Property name="Class">False</Property>
+        <Property name="Type">TSaveDialog</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="Edit1" id="ID=19" type="TEdit" systemType="TEdit" isPrimitive="false" visibility="public">
+        <Property name="Class">False</Property>
+        <Property name="Type">TEdit</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="Label2" id="ID=20" type="TLabel" systemType="TLabel" isPrimitive="false" visibility="public">
+        <Property name="Class">False</Property>
+        <Property name="Type">TLabel</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="CrumpleTransitionEffect1" id="ID=21" type="TCrumpleTransitionEffect" systemType="TCrumpleTransitionEffect" isPrimitive="false" visibility="public">
+        <Property name="Class">False</Property>
+        <Property name="Type">TCrumpleTransitionEffect</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="Label3" id="ID=22" type="TLabel" systemType="TLabel" isPrimitive="false" visibility="public">
+        <Property name="Class">False</Property>
+        <Property name="Type">TLabel</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="Label7" id="ID=23" type="TLabel" systemType="TLabel" isPrimitive="false" visibility="public">
+        <Property name="Class">False</Property>
+        <Property name="Type">TLabel</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="ComboBox1" id="ID=24" type="TComboBox" systemType="TComboBox" isPrimitive="false" visibility="public">
+        <Property name="Class">False</Property>
+        <Property name="Type">TComboBox</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="StyleBook1" id="ID=25" type="TStyleBook" systemType="TStyleBook" isPrimitive="false" visibility="public">
+        <Property name="Class">False</Property>
+        <Property name="Type">TStyleBook</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="ListBoxItem1" id="ID=26" type="TListBoxItem" systemType="TListBoxItem" isPrimitive="false" visibility="public">
+        <Property name="Class">False</Property>
+        <Property name="Type">TListBoxItem</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="ListBoxItem2" id="ID=27" type="TListBoxItem" systemType="TListBoxItem" isPrimitive="false" visibility="public">
+        <Property name="Class">False</Property>
+        <Property name="Type">TListBoxItem</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="Label8" id="ID=28" type="TLabel" systemType="TLabel" isPrimitive="false" visibility="public">
+        <Property name="Class">False</Property>
+        <Property name="Type">TLabel</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="SpeedButton2" id="ID=29" type="TSpeedButton" systemType="TSpeedButton" isPrimitive="false" visibility="public">
+        <Property name="Class">False</Property>
+        <Property name="Type">TSpeedButton</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="Image6" id="ID=30" type="TImage" systemType="TImage" isPrimitive="false" visibility="public">
+        <Property name="Class">False</Property>
+        <Property name="Type">TImage</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="Label9" id="ID=31" type="TLabel" systemType="TLabel" isPrimitive="false" visibility="public">
+        <Property name="Class">False</Property>
+        <Property name="Type">TLabel</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="SpeedButton3" id="ID=32" type="TSpeedButton" systemType="TSpeedButton" isPrimitive="false" visibility="public">
+        <Property name="Class">False</Property>
+        <Property name="Type">TSpeedButton</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="Image7" id="ID=33" type="TImage" systemType="TImage" isPrimitive="false" visibility="public">
+        <Property name="Class">False</Property>
+        <Property name="Type">TImage</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="Label10" id="ID=34" type="TLabel" systemType="TLabel" isPrimitive="false" visibility="public">
+        <Property name="Class">False</Property>
+        <Property name="Type">TLabel</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="SpeedButton4" id="ID=35" type="TSpeedButton" systemType="TSpeedButton" isPrimitive="false" visibility="public">
+        <Property name="Class">False</Property>
+        <Property name="Type">TSpeedButton</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="Image2" id="ID=36" type="TImage" systemType="TImage" isPrimitive="false" visibility="public">
+        <Property name="Class">False</Property>
+        <Property name="Type">TImage</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="Label4" id="ID=37" type="TLabel" systemType="TLabel" isPrimitive="false" visibility="public">
+        <Property name="Class">False</Property>
+        <Property name="Type">TLabel</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Method id="ID=38" name="SpeedButton1Click" isSubroutine="true" visibility="public">
+        <Parameter elementName="Sender" id="ID3=38_23002745" type="TObject" systemType="TObject" isPrimitive="false" />
+        <Property name="Override">False</Property>
+        <Property name="Final">False</Property>
+        <Property name="Class">False</Property>
+        <Property name="Abstract">False</Property>
+        <Property name="Reintroduce">False</Property>
+        <Property name="Virtual">False</Property>
+        <ReturnType id="ID=38" type="" isPrimitive="true" />
+      </Method>
+      <Method id="ID=39" name="Button1Click" isSubroutine="true" visibility="public">
+        <Parameter elementName="Sender" id="ID3=39_51283066" type="TObject" systemType="TObject" isPrimitive="false" />
+        <Property name="Override">False</Property>
+        <Property name="Final">False</Property>
+        <Property name="Class">False</Property>
+        <Property name="Abstract">False</Property>
+        <Property name="Reintroduce">False</Property>
+        <Property name="Virtual">False</Property>
+        <ReturnType id="ID=39" type="" isPrimitive="true" />
+      </Method>
+      <Method id="ID=40" name="CornerButton1Click" isSubroutine="true" visibility="public">
+        <Parameter elementName="Sender" id="ID3=40_60287683" type="TObject" systemType="TObject" isPrimitive="false" />
+        <Property name="Override">False</Property>
+        <Property name="Final">False</Property>
+        <Property name="Class">False</Property>
+        <Property name="Abstract">False</Property>
+        <Property name="Reintroduce">False</Property>
+        <Property name="Virtual">False</Property>
+        <ReturnType id="ID=40" type="" isPrimitive="true" />
+      </Method>
+      <Method id="ID=41" name="Button2Click" isSubroutine="true" visibility="public">
+        <Parameter elementName="Sender" id="ID3=41_51464189" type="TObject" systemType="TObject" isPrimitive="false" />
+        <Property name="Override">False</Property>
+        <Property name="Final">False</Property>
+        <Property name="Class">False</Property>
+        <Property name="Abstract">False</Property>
+        <Property name="Reintroduce">False</Property>
+        <Property name="Virtual">False</Property>
+        <ReturnType id="ID=41" type="" isPrimitive="true" />
+      </Method>
+      <Method id="ID=42" name="aggiornachiavi" isSubroutine="true" visibility="public">
+        <Property name="Override">False</Property>
+        <Property name="Final">False</Property>
+        <Property name="Class">False</Property>
+        <Property name="Abstract">False</Property>
+        <Property name="Reintroduce">False</Property>
+        <Property name="Virtual">False</Property>
+        <ReturnType id="ID=42" type="" isPrimitive="true" />
+      </Method>
+    </Classifier>
+    <Classifier name="globals msecdig" id="ID=7" type="Module" visibility="public">
+      <Link targetName="Form2" id="ID=99" metaclass="Association Link" idref="ID=8">
+        <Property name="Client">Form2</Property>
+        <Property name="Supplier">TForm2</Property>
+        <Property name="Type">association</Property>
+        <Property name="Directed">False</Property>
+      </Link>
+      <Uses />
+      <Field fieldType="Field" elementName="Form2" id="ID=94" typeref="ID=8" type="TForm2" isPrimitive="false" visibility="internal">
+        <Property name="Type">TForm2</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="Key128" id="ID=95" type="TKey128" isPrimitive="true" visibility="internal">
+        <Property name="Type">TKey128</Property>
+        <Property name="Const">False</Property>
+      </Field>
+      <Field fieldType="Field" elementName="pwd" id="ID=96" DefaultValue="'16104d6fd4cd31b1e68bba867ae84aebf67698a0'" type="System.string" systemType="string" isPrimitive="false" visibility="internal">
+        <Property name="Initial">'16104d6fd4cd31b1e68bba867ae84aebf67698a0'</Property>
+        <Property name="Const">True</Property>
+      </Field>
+    </Classifier>
+    <Classifier name="TEncryption" id="ID=9" type="Enum" visibility="public">
+      <Uses>
+        <Use element="ID=93" type="field_type" />
+      </Uses>
+      <Field fieldType="Field" elementName="e3DesCbc" id="ID=93" typeref="ID=9" isPrimitive="false" type="Enumeration Value" visibility="public" />
+    </Classifier>
+  </Package>
+</Model>
