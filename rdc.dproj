@@ -44,6 +44,12 @@
         <CfgParent>Base</CfgParent>
         <Base>true</Base>
     </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='OSX32' and '$(Cfg_2)'=='true') or '$(Cfg_2_OSX32)'!=''">
+        <Cfg_2_OSX32>true</Cfg_2_OSX32>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
     <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
         <Cfg_2_Win32>true</Cfg_2_Win32>
         <CfgParent>Cfg_2</CfgParent>
@@ -99,6 +105,13 @@
         <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
         <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
         <DCC_DebugInformation>false</DCC_DebugInformation>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_OSX32)'!=''">
+        <Debugger_Launcher>/usr/X11/bin/xterm -e &quot;%debuggee%&quot;</Debugger_Launcher>
+        <Icon_MainIcon>rdc_Icon1.ico</Icon_MainIcon>
+        <Icns_MainIcns>rdc_Icns1.icns</Icns_MainIcns>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
         <VerInfo_Locale>1033</VerInfo_Locale>
@@ -189,10 +202,19 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment>
-                <DeployFile LocalName="OSX32\Release\rdc.info.plist" Configuration="Release" Class="ProjectOSXInfoPList">
+                <DeployFile LocalName="OSX32\Debug\rdc.info.plist" Configuration="Debug" Class="ProjectOSXInfoPList">
                     <Platform Name="OSX32">
                         <RemoteName>Info.plist</RemoteName>
                     </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\delphi_PROJECTICNS.icns" Configuration="Debug" Class="ProjectOSXResource">
+                    <Platform Name="OSX32">
+                        <RemoteName>rdc.icns</RemoteName>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule">
+                    <Platform Name="OSX32"/>
+                    <Platform Name="iOSSimulator"/>
                 </DeployFile>
                 <DeployFile LocalName="OSX32\Release\rdc.rsm" Configuration="Release" Class="DebugSymbols">
                     <Platform Name="OSX32">
@@ -200,22 +222,37 @@
                         <RemoteName>rdc.rsm</RemoteName>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule">
-                    <Platform Name="OSX32"/>
-                    <Platform Name="iOSSimulator"/>
-                </DeployFile>
-                <DeployFile LocalName="$(BDS)\bin\delphi_PROJECTICNS.icns" Configuration="Release" Class="ProjectOSXResource">
+                <DeployFile LocalName="OSX32\Release\rdc.info.plist" Configuration="Release" Class="ProjectOSXInfoPList">
                     <Platform Name="OSX32">
-                        <RemoteName>rdc.icns</RemoteName>
+                        <RemoteName>Info.plist</RemoteName>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="OSX32\Release\rdc.entitlements" Configuration="Release" Class="ProjectOSXEntitlements">
+                <DeployFile LocalName="OSX32\Debug\rdc.entitlements" Configuration="Debug" Class="ProjectOSXEntitlements">
                     <Platform Name="OSX32">
                         <RemoteName>Entitlements.plist</RemoteName>
                     </Platform>
                 </DeployFile>
                 <DeployFile LocalName="OSX32\Release\rdc" Configuration="Release" Class="ProjectOutput">
                     <Platform Name="OSX32"/>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\delphi_PROJECTICNS.icns" Configuration="Release" Class="ProjectOSXResource">
+                    <Platform Name="OSX32">
+                        <RemoteName>rdc.icns</RemoteName>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="OSX32\Debug\rdc" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="OSX32"/>
+                </DeployFile>
+                <DeployFile LocalName="OSX32\Release\rdc.entitlements" Configuration="Release" Class="ProjectOSXEntitlements">
+                    <Platform Name="OSX32">
+                        <RemoteName>Entitlements.plist</RemoteName>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="OSX32\Debug\rdc.rsm" Configuration="Debug" Class="DebugSymbols">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS\</RemoteDir>
+                        <RemoteName>rdc.rsm</RemoteName>
+                    </Platform>
                 </DeployFile>
                 <DeployClass Required="true" Name="DependencyPackage">
                     <Platform Name="iOSDevice">

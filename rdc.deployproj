@@ -7,16 +7,16 @@
     <ItemGroup Condition="'$(Platform)'=='Win32'"/>
     <ItemGroup Condition="'$(Platform)'=='Win64'"/>
     <ItemGroup Condition="'$(Platform)'=='OSX32'">
-        <DeployFile Include="OSX32\Release\rdc.info.plist" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="OSX32\Debug\rdc.info.plist" Condition="'$(Config)'=='Debug'">
             <RemoteDir>rdc.app\Contents\</RemoteDir>
             <RemoteName>Info.plist</RemoteName>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
         </DeployFile>
-        <DeployFile Include="OSX32\Release\rdc.rsm" Condition="'$(Config)'=='Release'">
-            <RemoteDir>rdc.app\Contents\MacOS\</RemoteDir>
-            <RemoteName>rdc.rsm</RemoteName>
+        <DeployFile Include="$(BDS)\bin\delphi_PROJECTICNS.icns" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>rdc.app\Contents\Resources\</RemoteDir>
+            <RemoteName>rdc.icns</RemoteName>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -28,14 +28,21 @@
             <LocalCommand/>
             <RemoteCommand/>
         </DeployFile>
-        <DeployFile Include="$(BDS)\bin\delphi_PROJECTICNS.icns" Condition="'$(Config)'=='Release'">
-            <RemoteDir>rdc.app\Contents\Resources\</RemoteDir>
-            <RemoteName>rdc.icns</RemoteName>
+        <DeployFile Include="OSX32\Release\rdc.rsm" Condition="'$(Config)'=='Release'">
+            <RemoteDir>rdc.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>rdc.rsm</RemoteName>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
         </DeployFile>
-        <DeployFile Include="OSX32\Release\rdc.entitlements" Condition="'$(Config)'=='Release'">
+        <DeployFile Include="OSX32\Release\rdc.info.plist" Condition="'$(Config)'=='Release'">
+            <RemoteDir>rdc.app\Contents\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="OSX32\Debug\rdc.entitlements" Condition="'$(Config)'=='Debug'">
             <RemoteDir>rdc.app\Contents\</RemoteDir>
             <RemoteName>Entitlements.plist</RemoteName>
             <Operation>1</Operation>
@@ -49,6 +56,35 @@
             <LocalCommand/>
             <RemoteCommand/>
             <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="rdc_Icns1.icns" Condition="'$(Config)'=='Release'">
+            <RemoteDir>rdc.app\Contents\Resources\</RemoteDir>
+            <RemoteName>rdc.icns</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="OSX32\Debug\rdc" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>rdc.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>rdc</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="OSX32\Release\rdc.entitlements" Condition="'$(Config)'=='Release'">
+            <RemoteDir>rdc.app\Contents\</RemoteDir>
+            <RemoteName>Entitlements.plist</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="OSX32\Debug\rdc.rsm" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>rdc.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>rdc.rsm</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
         </DeployFile>
     </ItemGroup>
     <ItemGroup Condition="'$(Platform)'=='iOSSimulator'">
